@@ -1,0 +1,14 @@
+{
+	"name": "solid-performance-settings",
+	"version": "0.1.1",
+	"private": true,
+	"description": "Solid Performance is a no-code solution for increasing the speed of your WordPress website.",
+	"main": "settings-src/index.js",
+	"scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    },
+	"devDependencies": {
+		"@wordpress/scripts": "^27.7.0"
+	}
+}

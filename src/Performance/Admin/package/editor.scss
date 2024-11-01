@@ -1,0 +1,154 @@
+.wrap.solidwp-performance-settings-page {
+    margin: 0;
+    --grape-purple-120: #49108a;
+    --grape-purple-110: #53129e;
+    --grape-purple-100: #6817c5;
+    --surface-primary: #fff;
+    --wp-admin-theme-color: var(--grape-purple-100);
+    --wp-admin-theme-color-darker-10: var(--grape-purple-110);
+    --wp-admin-theme-color-darker-20: var(--grape-purple-120);
+    --wp-components-color-accent: var(--grape-purple-100);
+}
+.solidwp-performance-settings-header {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    min-height: calc(30px + 1rem);
+    margin-left:-20px;
+    img {
+        height: 25px;
+        width: auto;
+    }
+}
+.solidwp-performance-settings-title {
+	padding-right: 20px;
+
+    h2 {
+		display: none;
+	}
+
+	.notice {
+		margin-top: 30px;
+	}
+}
+.solidwp-performance-settings-main h1 {
+    margin-bottom:20px;
+    margin-top: 20px;
+    padding: 0;
+    line-height: 2rem;
+    color: rgb(51, 51, 51);
+    font-size: 1.5rem;
+}
+.swpsp-settings-form {
+    margin: 20px 0;
+    padding-right:20px;
+    .swpsp-settings-section-tabs {
+        display: flex;
+        align-items: start;
+        flex-direction: row;
+        gap: calc(20px);
+        justify-content: space-between;
+        .components-tab-panel__tabs {
+            width: 10rem;
+            gap: 0.25rem;
+            margin-top: 1.25rem;
+            .components-tab-panel__tabs-item {
+                font-size: 14px;
+                font-weight: 600;
+                height: auto;
+                border-radius: 1.25rem;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 2px solid transparent;
+                overflow-wrap: break-word;
+                box-shadow: none;
+                &:after {
+                    display: none;
+                }
+                &.is-active, &:hover {
+                    background: rgb(224, 224, 224);
+                    color: rgb(51, 51, 51);
+                }
+            }
+        }
+        .components-tab-panel__tab-content {
+            display: flex;
+            max-height: 100%;
+            max-width: 100%;
+            min-height: 0px;
+            min-width: 0px;
+            flex: 1 1 0%;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    p.submit {
+        padding-bottom: 0px;
+    }
+    .components-base-control {
+        margin-bottom: 20px;
+    }
+    .components-card__header {
+        header {
+            display: flex;
+            align-items: center;
+            width:100%;
+            gap: 20px;
+        }
+        h2 {
+            margin: 0;
+            flex: 1;
+            line-height: 36px;
+        }
+    }
+    .components-card-body {
+        padding: 24px;
+    }
+}
+.swpsp-large-toggle {
+    .components-toggle-control__label {
+        font-size: 16px;
+    }
+    .components-form-toggle {
+        .components-form-toggle__track {
+            height: 27px;
+            width: 54px;
+            border-radius: 14px;
+        }
+        .components-form-toggle__thumb {
+            height: 18px;
+            width: 18px;
+            top: 4px;
+            left: 4px;
+        }
+        &.is-checked .components-form-toggle__thumb {
+            transform: translateX(28px);
+        }
+    }
+}
+.swpsp-notice-wrap {
+    .components-snackbar-list {
+        bottom: 20px;
+        position: fixed;
+    }
+}
+
+.stellarwp-telemetry-btn-primary {
+	color: #FFF;
+	background-color: rgb(104, 23, 197);
+
+	&:hover,
+	&:focus {
+		background-color: rgb(83, 18, 158);
+	}
+}
+
+.stellarwp-telemetry-links__link {
+	color: rgb(104, 23, 197);
+
+	&:hover,
+	&:focus {
+		color: rgb(83, 18, 158);
+	}
+}

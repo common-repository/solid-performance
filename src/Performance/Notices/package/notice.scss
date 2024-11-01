@@ -1,0 +1,107 @@
+#solid-performance-welcome-notice {
+	display: flex;
+	border-left: none;
+	border-radius: 4px;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+	.icon-border {
+		flex-basis: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #6817c5;
+		padding: 0 8px;
+
+		svg {
+			height: 24px;
+			width: 24px;
+		}
+	}
+
+	.notice-content {
+		flex-grow: 1;
+		flex-wrap: wrap;
+		margin-left: 20px;
+		padding: 10px 0;
+
+		h2 {
+			padding: 0;
+			margin: 0;
+			font-size: 16px;
+		}
+
+		.notice-status {
+			display: inline-flex;
+			align-items: center;
+			border: 1px solid #e7e7e7;
+			border-radius: 21px;
+			padding: 0 12px 0 8px;
+			margin-left: 10px;
+			font-size: 12px;
+			font-weight: 500;
+		}
+
+		p {
+			padding: 0;
+			margin: 0;
+			font-size: 13px;
+			color: #545454;
+		}
+	}
+
+	.notice-title {
+		display: flex;
+		align-items: center;
+		margin: 0 0 4px;
+	}
+
+	.settings-page-button {
+		display: block;
+		align-self: center;
+		justify-self: flex-end;
+		padding: 6px 12px;
+		border: 1px solid #cecece;
+		border-radius: 4px;
+		text-decoration: none;
+		background-color: #FFF;
+		color: #070707;
+		font-size: 14px;
+		font-weight: 500;
+
+		&:hover,
+		&:focus {
+			color: initial;
+		}
+	}
+
+	button.notice-dismiss {
+		position: relative;
+		align-self: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 20px;
+		padding: 0;
+		height: 24px;
+		width: 24px;
+
+		&::before {
+			content: '';
+			background: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22m12%2013.06%203.712%203.713%201.061-1.06L13.061%2012l3.712-3.712-1.06-1.06L12%2010.938%208.288%207.227l-1.061%201.06L10.94%2012l-3.712%203.712%201.06%201.061L12%2013.061z%22%20fill%3D%22%231E1E1E%22%2F%3E%3C%2Fsvg%3E');
+			background-size: contain;
+		}
+	}
+
+	@media screen and (max-width: 782px) {
+		flex-flow: column;
+
+		.notice-content {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
